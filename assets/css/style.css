@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    background: #111315;;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #ececec;
+  }
+  
+  input,
+  button {
+    outline: 0;
+  }
+  
+  .content {
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1da1f2;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  pre#lyrics, pre#lyrics {
+    display: block;
+    font-size: 87.5%;
+    color: #8eaece;
+}
+
+pre#titulo {
+  margin-left: 28px;
+  display: block;
+  font-size: 87.5%;
+  color: #8eaece;
+}
+  
+  button.action {
+    padding: 7px 44px;
+    border: #000 1px solid;
+    border-radius: 20px;
+    background: transparent;
+    color: #1da1f2;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  button.action.blue {
+    background-color: #545345;
+    color: #fff;
+  }
+  
+  header.main-header {
+    border-bottom: #3d5466 solid 1px;
+    height: 53px;
+  }
+  
+  header.main-header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  header.main-header .logo-and-search {
+    display: flex;
+    width: 39%;
+  }
+  
+  header.main-header .logo-and-search img {
+    width: 37px;
+    margin-right: 36px;
+  }
+  
+  header.main-header .logo-and-search input {
+    background: #253341 url("../images/icon-search.svg") center left 10px
+      no-repeat;
+    color: rgba(255, 255, 255, 0.5);
+    height: 36px;
+    border-radius: 30px;
+    border: 0;
+    padding: 0 42px;
+    width: 100%;
+  }
+  
+  header.main-header .actions {
+    display: flex;
+  }
+  
+  header.main-header .actions button.action {
+    padding: 6px 18px;
+    border: #1da1f2 1px solid;
+    border-radius: 20px;
+    background: transparent;
+    color: #1da1f2;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  header.main-header .actions button.more {
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .wrapper-content {
+    color: rgba(240, 0, 0, 0.5);
+    font-size: 15px;
+    display: flex;
+  }
+  
+  .wrapper-content .contents {
+    max-width: 600px;
+    width: 100%;
+    border: #3d5466 solid 1px;
+    border-top: 0;
+  }
+  
+  .wrapper-content .contents .banner {
+    background: url("../images/banner.png") center top no-repeat;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .wrapper-content .contents .profile {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .wrapper-content .contents .profile .name {
+    color: #fff;
+  }
+  
+  .wrapper-content .contents .profile .username {
+    font-size: 15px;
+  }
+  
+  .wrapper-content .contents .profile .bio {
+    padding: 5px 0;
+    color: #fff;
+  }
+  
+  .wrapper-content .contents .profile ul {
+    display: flex;
+    color: #8899a6;
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  
+  .wrapper-content .contents .profile ul li {
+    margin-right: 15px;
+  }
+  
+  .wrapper-content .contents .profile ul.followers li strong {
+    color: #fff;
+  }
+  
+  .wrapper-content .contents .profile .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .wrapper-content .contents .profile .avatar img {
+    border: 5px solid #15202b;
+    border-radius: 50%;
+    height: 134px;
+    width: 134px;
+    margin-top: -80px;
+  }
+  
+  .wrapper-content .contents .profile .avatar button.action {
+    height: 35px;
+    margin-top: 12px;
+  }
+  
+  .wrapper-content .contents .options-content ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #3d5466 solid 1px;
+    font-weight: bold;
+  }
+  
+  .wrapper-content .contents .options-content li {
+    padding: 12px;
+  }
+  
+  .wrapper-content .contents .options-content li:first-child {
+    padding-left: 24px;
+  }
+  
+  .wrapper-content .contents .options-content li:last-child {
+    padding-right: 24px;
+  }
+  
+  .wrapper-content .contents .options-content li.active {
+    border-bottom: 2px solid #1da1f2;
+    color: #1da1f2;
+  }
+  
+  .wrapper-content .contents .tweets {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  
+  .wrapper-content .contents .tweets li {
+    display: flex;
+  }
+  
+  .wrapper-content .contents .tweets li .avatar {
+    margin-right: 10px;
+    flex-basis: 49px;
+    flex-grow: 0;
+  }
+  
+  .wrapper-content .contents .tweets li .avatar img {
+    width: 49px;
+    height: 49;
+    border-radius: 50%;
+  }
+  
+  .wrapper-content .contents .tweets li .account {
+    position: relative;
+  }
+  
+  .wrapper-content .contents .tweets li .account .name {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .wrapper-content .contents .tweets li .account .username {
+    font-size: 14px;
+    padding: 0 3px 0 4px;
+  }
+  
+  .wrapper-content .contents .tweets li .account .date:before {
+    content: " . ";
+  }
+  
+  .wrapper-content .contents .tweets li .actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-right: 6em;
+  }
+  
+  .wrapper-content .widgets {
+    margin-top: 10px;
+    padding: 0 15px;
+    flex-grow: 1;
+  }
+  
+  .wrapper-content .widgets .widget {
+    background: #192734;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 0px 15px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .wrapper-content .widgets .widget:first-child {
+    margin-top: 0px !important;
+  }
+  
+  .wrapper-content .widgets .widget.transparent {
+    background-color: transparent;
+    border: #3d5466 solid 1px;
+  }
+  
+  .wrapper-content .widgets .widget .widget-title {
+    border-bottom: 2px solid #38444d;
+    padding: 0 12px 5px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .wrapper-content .widgets .widget.transparent .widget-title {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .wrapper-content .widgets .widget .widget-content {
+    line-height: 15px;
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+  
+  .wrapper-content .widgets .widget .widget-content .action {
+    margin-top: 15px;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 24px;
+  }
+  
+  .wrapper-content .widgets .widget .widget-content ul {
+    display: flex;
+    flex-direction: column;
+    counter-reset: hot-topic;
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  
+  .wrapper-content .widgets .widget .widget-content ul li .hot-topic::before {
+    counter-increment: hot-topic;
+    content: counter(hot-topic) " . ";
+  }
+  
+  .wrapper-content .widgets .widget .widget-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .wrapper-content .widgets .widget .widget-content ul li .title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  
+  .wrapper-content .widgets footer {
+    padding: 5px 0;
+  }
+  
